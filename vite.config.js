@@ -6,7 +6,7 @@ import { sveltekit } from "@sveltejs/kit/vite";
 import { config as dotenvconf } from "dotenv"
 dotenvconf()
 
-console.log('Use Local?:', process.env.PUBLIC_LOCAL)
+console.log('>>> Local Plasmid Build?', process.env.PUBLIC_LOCAL)
 
 /** @type {import("vite").UserConfig} */
 const config = {
