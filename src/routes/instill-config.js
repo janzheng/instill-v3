@@ -1,12 +1,14 @@
 
 
+import { base } from '$app/paths'
 import { sharedSpaces } from '$instill-helpers/instill-config-shared'
 
 // deployment-specific — base config for all spaces
 export const baseConfig = {
+  description: 'prod',
   // apikey: '' // use default
   pd_base: 'V3_DB_BASE', // used to fetch pd user account data
-  base_url: '/',
+  base_url: base + "what", // use sveltekit to denote basepath
   register_url: '/register',
   settings: {
     loud: false,

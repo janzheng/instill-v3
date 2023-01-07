@@ -13,7 +13,7 @@
   <h1>instill spaces</h1>
 
   {#each orgSpaces?.spaces as space}
-    {@const link = `${baseUrl}/spaces/` + space.name}
+    {@const link = baseUrl + "spaces/" + space.name}
     <div class="relative">
       <div class="Card-solid --light --btn p-4 mb-2">
         <div class="text-xl | z-40 mb-1"><a href="{link}">{space.spaceName || space.name}</a></div>
@@ -34,6 +34,8 @@
   // import { goto, preloadData } from '$app/navigation';
   // import { getDerivedComments } from '$instill/instill-store'
 
+  // import { base } from '$app/paths'
+
   import * as config from '$instill/instill-config'
   import * as configPreview from '$instill/instill-config-preview'
   import { dev } from '$app/environment';
@@ -45,6 +47,8 @@
     baseConfig = config.baseConfig
     orgSpaces = config.orgSpaces
   }
+
+  console.log('baseConfig:', baseConfig, `[${baseConfig.base_url}]`)
 
   let baseUrl = baseConfig.base_url || '/instill';
 </script>
