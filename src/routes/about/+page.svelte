@@ -2,7 +2,8 @@
 <div class="about-notion">
   <div class="">
     <!-- legacy PhageCafe content -->
-    <Notion loadingMsg='' classes={''} id={"a02a3acc48764fdb9b6cb374732ddbf2"} api={env.PUBLIC_NOTION_API}/>
+    <!-- <Notion loadingMsg={'Loading...'} classes={''} id={"a02a3acc48764fdb9b6cb374732ddbf2"} api={env.PUBLIC_NOTION_API}/> -->
+    <Notion loadingMsg={'Loading...'} classes={''} blocks={data.notionData["a02a3acc48764fdb9b6cb374732ddbf2"]} api={env.PUBLIC_NOTION_API}/>
   </div>
 </div>  
 
@@ -26,7 +27,8 @@
 <footer class="about-notion-footer | ">
   <div class="my-4">
     <!-- legacy PhageCafe content -->
-    <Notion loadingMsg='' classes={'pt-4'} id={"92765b51ab104440b2e44600342305e1"} api={env.PUBLIC_NOTION_API}/>
+    <!-- <Notion loadingMsg={'Loading...'} classes={'pt-4'} id={"92765b51ab104440b2e44600342305e1"} api={env.PUBLIC_NOTION_API}/> -->
+    <Notion loadingMsg={'Loading...'} classes={'pt-4'} blocks={data.notionData["92765b51ab104440b2e44600342305e1"]} api={env.PUBLIC_NOTION_API}/>
   </div>
 </footer>
 
@@ -38,8 +40,6 @@
   import { env } from '$env/dynamic/public';
   import Notion from '@yawnxyz/sveltekit-notion'
 	// import { page } from '$app/stores';
-
-  
 
   export const logo = '/icon.png';
 
@@ -54,12 +54,13 @@
   export let data;
   export let spaceName, comments, profiles, subpaths;
   let _space;
+  
   $: if(data) {
-    spaceName = data.spaceName || data.space
+    spaceName = data.space.spaceName || data.space;
     // console.log('>>>> about: ', spaceName, data, 'org spaces:', orgSpaces)
-    comments = data.comments
-    subpaths = data.subpaths
-    profiles = data.profiles
+    comments = data.space.comments;
+    subpaths = data.space.subpaths;
+    profiles = data.space.profiles;
     _space = filterFind(orgSpaces.spaces, 'name', spaceName); 
   }
 

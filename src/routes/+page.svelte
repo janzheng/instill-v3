@@ -11,7 +11,7 @@
 <div class="hero | my-4">
   <div class="text-lg">
     <!-- legacy PhageCafe content -->
-    <Notion loadingMsg='' classes={''} id={"f91a56ecf579421e85b6496bb4354a39"} api={env.PUBLIC_NOTION_API}/>
+    <Notion loadingMsg='' classes={''} blocks={data.notionData["f91a56ecf579421e85b6496bb4354a39"]} api={env.PUBLIC_NOTION_API}/>
     <div class="mt-2">
       <a href="/join" class="Btn-solid">Join the Community</a>
       <a href="/about" class="Btn-outline">Learn more</a>
@@ -30,7 +30,7 @@
 
   <div class="my-4">
     <!-- legacy PhageCafe content -->
-    <Notion loadingMsg='' classes={'pt-4'} id={"92765b51ab104440b2e44600342305e1"} api={env.PUBLIC_NOTION_API}/>
+    <Notion loadingMsg='' classes={'pt-4'} blocks={data.notionData["92765b51ab104440b2e44600342305e1"]} api={env.PUBLIC_NOTION_API}/>
   </div>
 
 </footer>
@@ -59,11 +59,11 @@
   export let spaceName, comments, profiles, subpaths;
   let _space;
   $: if(data) {
-    spaceName = data.spaceName || data.space
+    spaceName = data.space.spaceName || data.space
     // console.log('>>>> about: ', spaceName, data, 'org spaces:', orgSpaces)
-    comments = data.comments
-    subpaths = data.subpaths
-    profiles = data.profiles
+    comments = data.space.comments
+    subpaths = data.space.subpaths
+    profiles = data.space.profiles
     _space = filterFind(orgSpaces.spaces, 'name', spaceName); 
   }
 </script>
