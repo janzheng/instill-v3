@@ -21,7 +21,7 @@ module.exports = {
     // './node_modules/tw-elements/dist/js/**/*.js',
     // './src/**/*.html',
     // './src/**/*.svelte',
-    './src/**/*.{svelte, md}',
+    './src/**/*.{svelte,md}',
     // './src/**/*.md',
   ],
   darkMode: 'media', // or true or 'media' or 'class'
