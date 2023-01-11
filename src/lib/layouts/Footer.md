@@ -23,13 +23,13 @@
 
           [@phage.directory](https://twitter.com/phagedirectory)
         </section>
-        <section class="footer-links-section">
+        <section class="footer-links-section pr-4">
 
           [hello@phage.directory](mailto:hello@phage.directory)
         </section>
         <section class="footer-links-section">
 
-          [Github](https://github.com/janzheng/instill-v3)
+          [github](https://github.com/janzheng/instill-v3)
         </section>
         
       </div>    
