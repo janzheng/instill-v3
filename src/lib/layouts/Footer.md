@@ -9,7 +9,6 @@
 </script>
 
 
-<span class="pr-4 mt-2">test test</span>
 <footer class="footer | mt-24">
 
   <div class="_content-narrow ">
