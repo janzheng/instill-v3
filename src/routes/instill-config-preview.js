@@ -300,12 +300,6 @@ export const orgSpaces = {
               label: "Link to Official Job Posting",
               placeholder: "Enter a link (e.g. Job website, Linkedin jobs, etc.",
             },
-            // topicFields: [{
-            //   name: 'url',
-            //   label: 'URL',
-            //   placeholder: 'Enter a URL',
-            //   type: 'text',
-            // }]
           },
           Show: {
             icon: 'show',

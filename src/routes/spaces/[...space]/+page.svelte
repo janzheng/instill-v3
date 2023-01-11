@@ -5,7 +5,7 @@
 
 <!-- <div class="_content-narrow"> -->
   <!-- <a class="mb-8 inline-block" href="{baseUrl}">instill home</a> -->
-  <SpaceView {baseConfig} {_space} {spaceName} {subpaths} {comments} {profiles} />
+  <SpaceView {baseConfig} {_space} spaceName={_space?.spaceName||spaceName} {subpaths} {comments} {profiles} />
 <!-- </div>   -->
 
 
