@@ -121,6 +121,7 @@
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.1",
+    "@fontsource/public-sans": "^4.5.11",
     "@notionhq/client": "^2.2.0",
     "cookie": "^0.4.1",
     "cytosis": "^0.0.607",

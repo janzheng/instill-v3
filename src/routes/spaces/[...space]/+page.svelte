@@ -45,6 +45,7 @@
   import { browser } from '$app/environment';
 
   $: if(data) {
+    // console.log('>>>> ', spaceName, data)
     spaceName = data.spaceName || data.space
     comments = data.comments
     subpaths = data.subpaths

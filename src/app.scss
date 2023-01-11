@@ -10,6 +10,10 @@
 */
 
 // @import '@fontsource/inter';
+// @import '@fontsource/public-sans/300';
+// @import '@fontsource/public-sans/400';
+// @import '@fontsource/public-sans/700';
+
 @import '@fontsource/inter/300';
 @import '@fontsource/inter/400';
 @import '@fontsource/inter/700';
@@ -64,7 +68,7 @@
 }
 
 h1 {
-  @apply text-3xl leading-tight lg:text-3xl lg:leading-tight pb-8 font-semibold
+  @apply text-3xl leading-tight lg:text-3xl lg:leading-tight pb-8 font-normal
 }
   h1.article-title  {
     @apply text-6xl md:text-5xl font-display leading-tight pb-8

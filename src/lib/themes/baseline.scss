@@ -15,6 +15,9 @@
   font-size: 0.875rem; // 14px; good for dashboards
   color: var(--color-base); // base text color
 
+  --notion-left-padding: 0;
+  --notion-right-padding: 0;
+
   .notion-page {
     --notion-h1-weight: 500;
     --notion-h2-weight: 500;
@@ -22,6 +25,10 @@
     --notion-h3: 1.26rem;
 
     --notion-p-padding: var(--notion-8px) var(--notion-2px);
+
+    // annoying when notion is padded vs. rest of the content
+    padding-left: var(--notion-left-padding);
+    padding-right: var(--notion-right-padding);
   }
 
   b {

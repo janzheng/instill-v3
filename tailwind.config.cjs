@@ -80,7 +80,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      'sans': ['"Inter"', '"Open Sans"', 'system-ui'],
+      // 'sans': ['"Public Sans", "Inter"', '"Open Sans"', 'system-ui'],
+      'sans': [ '"Inter"', '"Open Sans"', 'system-ui'],
       'serif': ['"Editorial New"', 'Georgia', 'Constantia', 'serif'],
       'mono': ['Consolas', '"Courier New"', 'Courier', 'monospace'],
       'display': ['Editorial New'],

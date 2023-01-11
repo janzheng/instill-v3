@@ -7,8 +7,8 @@ export const baseConfig = {
   description: 'preview',
   // apikey: '' // use default
   pd_base: 'V3_DB_BASE', // used to fetch pd user account data
-  base_url: "/", // use sveltekit to denote basepath
-  register_url: '/register',
+  base_url: "", // leave empty for root
+  register_url: '/join',
   settings: {
     loud: false,
     connector: 'Airtable',

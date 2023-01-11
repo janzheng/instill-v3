@@ -4,7 +4,7 @@
 - This Instill App is made up of a few core routes:
   - /api/
   - /profiles/
-  - /register/
+  - /join/
   - /spaces/
 
 - Any other "full-fledged" app can selectively implement these routes. The API relies on reading the correct config data.

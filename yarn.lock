@@ -1053,6 +1053,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.14.tgz#3944b809aa7bf27dacd20bdc04a49fb738959724"
   integrity sha512-JDC9AocdPLuGsASkvWw9hS5gtHE7K9dOwL98XLrk5yjYqxy4uVnScG58NUvFMJDVJRl/7c8Wnap6PEs+7Zvj1Q==
 
+"@fontsource/public-sans@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/public-sans/-/public-sans-4.5.11.tgz#a95f6129c8bf092da7ae956eebf688b35b389e2c"
+  integrity sha512-waejL3VQnifnLVwQGcW2bULD2vUaevjE9OKmOSAmBACAebZnnYznHL+NL4NgW6B+b1wyltmIr6jBF5XMZVWgYA==
+
 "@ipld/dag-cbor@^6.0.3":
   version "6.0.15"
   resolved "https://registry.yarnpkg.com/@ipld/dag-cbor/-/dag-cbor-6.0.15.tgz#aebe7a26c391cae98c32faedb681b1519e3d2372"

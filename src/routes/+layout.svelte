@@ -13,11 +13,15 @@
 
 	import '../app.scss'
 
-  import SimpleLayout from '$instill-helpers/components/SimpleLayout.svelte';
+  import Footer from '$lib/layouts/Footer.md'
+
+  import InstillLayout from '$instill-helpers/components/InstillLayout.svelte';
   export let data;
 
 	const transitionIn = { delay: 150, duration: 150 };
 	const transitionOut = { duration: 100 };
+
+  $: console.log('path page', $page)
 
 </script>
 
@@ -28,19 +32,21 @@
 
 <div class="layout" class:open={$isMenuOpen}>
 
-  {#key data.path}
+  {#key $page.url.pathname}
     <main
       id="main"
       tabindex="-1"
       in:fade={transitionIn}
       out:fade={transitionOut}
     >
-      <SimpleLayout path={data.path}>
+      <InstillLayout path={$page.url.pathname}>
         <slot />
-      </SimpleLayout>
+      </InstillLayout>
     </main>
   {/key}
 </div>
 
+
+<Footer />
 
 
