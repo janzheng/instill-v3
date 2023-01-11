@@ -9,7 +9,7 @@
 </script>
 
 
-
+<preload class="pr-4 mt-2"></preload>
 <footer class="footer | mt-24">
 
   <div class="_content-narrow ">
