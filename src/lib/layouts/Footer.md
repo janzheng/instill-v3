@@ -9,9 +9,7 @@
 </script>
 
 
-
-<span class="pr-4 mt-2"></span>  
-<footer class="footer | mt-24">
+<footer class="footer | mt-8">
 
   <div class="_content-narrow ">
     <div class="md:flex-row md:flex _items-center gap-4">
@@ -42,7 +40,7 @@
       </div>
     </div>
 
-    <div class="">
+    <div class="text-center">
 
       All parts of this site is licensed CC BY 4.0 unless otherwise noted. 
 
@@ -50,8 +48,8 @@
         <a href="/privacy">Privacy</a><span class="pr-4"></span><a href="/terms">Terms of Service</a>
       </div> -->
 
-      <div class="mt-2">
-        <img src="/instill_icon.png" width="48px">
+      <div class="text-center my-2">
+        <img class="mx-auto" alt="instill logo" src="/instill_icon.png" width="48px">
       </div>
     </div>  
   </div>

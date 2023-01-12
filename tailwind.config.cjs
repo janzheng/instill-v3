@@ -15,7 +15,7 @@ function withOpacityValue(variable) {
 }
 
 module.exports = {
-  // add this section
+
   content: [
     // './src/**/*.{html,js}',
     // './node_modules/tw-elements/dist/js/**/*.js',
@@ -93,6 +93,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
+    require('postcss-import'),
     require('tailwindcss/nesting'),
     require('@tailwindcss/forms'),
     require('tw-elements/dist/plugin'),
