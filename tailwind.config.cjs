@@ -22,7 +22,7 @@ module.exports = {
     // './node_modules/tw-elements/dist/js/**/*.js',
     // './src/**/*.html',
     // './src/**/*.svelte',
-    './src/plasmid/modules//**/*.{svelte,md}',
+    './node_modules/plasmid/**/*.{svelte,md}',
     './src/**/*.{svelte,md}',
     // './src/**/*.md',
   ],
