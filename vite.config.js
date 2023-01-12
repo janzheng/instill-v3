@@ -14,7 +14,7 @@ const config = {
     // markdown(),
     // markdown({ mode: Mode.HTML }),
     sveltekit({
-      extensions: ['.svelte'],
+      extensions: ['.svelte', '.md'],
     }),
   ],
   // css: {

@@ -15,13 +15,14 @@ function withOpacityValue(variable) {
 }
 
 module.exports = {
-  // add this section
+
+
   content: [
     // './src/**/*.{html,js}',
     // './node_modules/tw-elements/dist/js/**/*.js',
     // './src/**/*.html',
     // './src/**/*.svelte',
-    './src/plasmid/modules//**/*.{svelte,md}',
+    './node_modules/plasmid/**/*.{svelte,md}',
     './src/**/*.{svelte,md}',
     // './src/**/*.md',
   ],
@@ -93,6 +94,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
+    // require('postcss-import'), // moved to postcss.config.cjs
     require('tailwindcss/nesting'),
     require('@tailwindcss/forms'),
     require('tw-elements/dist/plugin'),

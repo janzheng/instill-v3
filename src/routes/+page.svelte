@@ -29,7 +29,7 @@
 
 <footer class="about-notion-footer | ">
 
-  <div class="my-4">
+  <div class="">
     <!-- legacy PhageCafe content -->
     <Notion loadingMsg='' classes={'pt-4'} blocks={data.notionData["92765b51ab104440b2e44600342305e1"]} api={env.PUBLIC_NOTION_API}/>
   </div>
