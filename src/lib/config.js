@@ -10,13 +10,13 @@ import { writable, get } from 'svelte/store';
  * PLEASE BE SURE TO UPDATE THEM ALL! Thank you!
  **/
 
-export const siteIcon = "/icon.png"
-export const siteCard = "https://phage.directory/share_img.png"
-export const siteCardTitle = "Phage Directory API"
+export const siteIcon = "/instill_icon.png"
+export const siteCard = "https://instill.xyz/share_img_instill.jpg"
+export const siteCardTitle = "Instill Science"
 
-export const siteTitle = "Phage Directory API"
-export const siteDescription = "Phage Directory API"
-export const siteURL = "api.phage.directory" // no protocol
+export const siteTitle = "Instill Science"
+export const siteDescription = "Instill: a community platform for science"
+export const siteURL = "instill.xyz" // no protocol
 export const siteLink = "https://" + siteURL // 'https://github.com/josh-collinsworth/sveltekit-blog-starter'
 export const siteAuthor = 'Jan Zheng'
 export const siteTwitter = '@yawnxyz'

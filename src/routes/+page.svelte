@@ -4,9 +4,6 @@
   https://kit.svelte.dev/docs/form-actions
 
  -->
-<svelte:head>
-  <title>instill.xyz</title>
-</svelte:head>
 
 <div class="hero | my-4">
   <div class="text-lg">
@@ -25,6 +22,10 @@
 </div>
 
 
+{#key $ConfigHead}
+  <Head />
+{/key}
+
 
 <footer class="about-notion-footer | ">
 
@@ -40,6 +41,8 @@
 
 
 <script>
+  import Head from '$lib/components/shared/Head.svelte'
+  import { Head as ConfigHead } from '$lib/config.js'
 
   import { env } from '$env/dynamic/public';
   import Notion from '@yawnxyz/sveltekit-notion'
