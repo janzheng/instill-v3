@@ -21,7 +21,7 @@
 	const transitionIn = { delay: 150, duration: 150 };
 	const transitionOut = { duration: 100 };
 
-  $: console.log('path page', $page)
+  $: console.log('[layout] page', $page, $page.url.searchParams.get('type'))
 
 </script>
 
