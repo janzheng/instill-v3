@@ -6223,8 +6223,8 @@ pinkie@^2.0.0:
   integrity sha512-MnUuEycAemtSaeFSjXKW/aroV7akBbY+Sv+RkyqFjgAe73F+MR0TBWKBRDkmfWq/HiFmdavfZ1G7h4SPZXaCSg==
 
 "plasmid@git+https://github.com/janzheng/plasmid.git":
-  version "0.0.4"
-  resolved "git+https://github.com/janzheng/plasmid.git#03d090a7e6490aea8d7fff3234a6ceaecd52c5e5"
+  version "0.0.5"
+  resolved "git+https://github.com/janzheng/plasmid.git#476aa422b410deebf9e4bdbdd06091803c592d8a"
   dependencies:
     "@polka/send" "^0.4.0"
     "@polka/send-type" "^0.5.2"

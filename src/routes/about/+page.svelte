@@ -15,12 +15,15 @@
 
 
 
-
-
-
 <!-- this needs to be afer SpaceView since it alters the head -->
+
+
+{#key $ConfigHead}
+  <Head />
+{/key}
+
 <svelte:head>
-  <title>{ 'about instill'}</title>
+  <title>{ 'About Instill'}</title>
 </svelte:head>
 
 
@@ -37,6 +40,9 @@
 
 
 <script>
+  import Head from '$lib/components/shared/Head.svelte'
+  import { Head as ConfigHead } from '$lib/config.js'
+
   import { env } from '$env/dynamic/public';
   import Notion from '@yawnxyz/sveltekit-notion'
 	// import { page } from '$app/stores';
