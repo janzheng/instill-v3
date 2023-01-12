@@ -48,7 +48,7 @@
 
 
   
-  let baseUrl = baseConfig.base_url == '' ? "" : '/instill';
+  let baseUrl = `${baseConfig?.base_url}`
 </script>
 
 

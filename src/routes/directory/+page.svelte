@@ -46,7 +46,7 @@
     orgSpaces = config.orgSpaces
   }
 
-  let baseUrl = baseConfig.base_url == '' ? "" : '/instill';
+  let baseUrl = `${baseConfig?.base_url}`
 </script>
 
 

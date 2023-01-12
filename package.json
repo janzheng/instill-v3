@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "notes": "yarn install necessary to include any yarn linked components",
-    "dev": "vite dev --port 3579",
+    "dev": "vite dev --port 3232",
     "devopen": "vite dev --open",
     "package": "vite package",
     "preview": "vite preview",

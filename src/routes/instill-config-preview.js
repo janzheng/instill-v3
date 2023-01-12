@@ -7,7 +7,8 @@ export const baseConfig = {
   description: 'preview',
   // apikey: '' // use default
   pd_base: 'V3_DB_BASE', // used to fetch pd user account data
-  base_url: "", // leave empty for root
+  base_url: "", // leave empty for root; use "/url" for subdirectories
+  space_url: "spaces", // where all the spaces reside
   register_url: '/join',
   settings: {
     loud: false,

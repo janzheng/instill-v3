@@ -53,7 +53,7 @@
 
   console.log('baseConfig:', baseConfig, `[${baseConfig.base_url}]`)
 
-  let baseUrl = baseConfig.base_url == '' ? "" : '/instill';
+  let baseUrl = `${baseConfig?.base_url}`
 </script>
 
 
