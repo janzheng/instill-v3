@@ -42,7 +42,7 @@
 
     <div class="text-center">
 
-      All parts of this site is licensed CC BY 4.0 unless otherwise noted. 
+      All parts of this site is CC BY-4.0 and MIT licensed unless otherwise noted. 
 
       <!-- <div>
         <a href="/privacy">Privacy</a><span class="pr-4"></span><a href="/terms">Terms of Service</a>
