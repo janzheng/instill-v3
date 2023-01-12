@@ -64,6 +64,9 @@ export let head = {
   },
   meta: [
     // { hid: 'google-site-verification', name: 'google-site-verification', content: "FV3L35TjM9haadbuZvHLDz2n-I1KUbN_gYqM3cIH0Wk" },
+
+    // this makes analytics work slightly better
+    { name: 'referrer', content: "no-referrer-when-downgrade" },
   ],
 }
 head = {
