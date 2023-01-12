@@ -14,17 +14,17 @@
 <footer class="footer | mt-24">
 
   <div class="_content-narrow ">
-    <div class="md:flex-row md:flex _items-center gap-8">
+    <div class="md:flex-row md:flex _items-center gap-4">
       <div class="footer-links 
         ---
         flex-1
         relative md:flex items-center flex-row gap-8  
       ">
-        <section class="footer-links-section pr-4">
+        <section class="footer-links-section ">
 
           [@phage.directory](https://twitter.com/phagedirectory)
         </section>
-        <section class="footer-links-section pr-4">
+        <section class="footer-links-section ">
 
           [hello@phage.directory](mailto:hello@phage.directory)
         </section>

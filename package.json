@@ -17,7 +17,7 @@
     "commitprod": "git add . -A ; git commit ; git push origin main ",
     "prod": "link vercel directly to prod branch; don't push to prod",
     "stage": "yarn install; vercel",
-    "up-plasmid": "yarn add --dev git+https://github.com/janzheng/plasmid.git",
+    "plasmid": "yarn add --dev git+https://github.com/janzheng/plasmid.git",
     "ln-plasmid": "ln -s ../../../plasmid/"
   },
   "devDependencies": {
