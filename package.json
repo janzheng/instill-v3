@@ -12,6 +12,7 @@
     "package": "vite package",
     "preview": "vite preview",
     "build": "vite build",
+    "staging": "vite build --mode staging",
     "run": "vite build; vite preview",
     "commit": "git add . -A ; git commit ; git push origin preview ",
     "commitprod": "git add . -A ; git commit ; git push origin main ",
