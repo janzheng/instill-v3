@@ -150,13 +150,58 @@ export const orgSpaces = {
         // actionRoute: "someactionroute/instill/spaces",
 
         // postType: 'Link', // sets the default post type
-        defaultPostType: 'Link', // sets the default post type
+        defaultPostType: 'Post', // sets the default post type
         // postTypes: ['Article', 'Post', 'Ask', 'Link', 'Show', 'Poll'],
-        postTypes: ['Article', 'Link', 'Job', 'Ask', 'Show', 'Suggestion', 'Poll'],
+        postTypes: ['Post', 'Article', 'Link', 'Job', 'Ask', 'Show', 'Suggestion', 'Poll'],
         showPostTypeFilters: true,
+
+        channels: {
+          show: true,
+          list: ['general', 'jobs', 'all'],
+        },
+
+        reactions: {
+          show: true,
+          upvote: true,
+          list: ['like', 'love', 'haha', 'wow', 'sad', 'angry'],
+        },
 
         // v2 settings
         postTypeSettings: {
+          Post: {
+            icon: 'post',
+            label: 'Post',
+            description: 'A generic forum post',
+            postCta: "Create Post",
+            uploadImages: true,
+            keywords: {
+              label: 'Keywords',
+              placeholder: 'Enter keywords',
+            },
+            topic: {
+              label: 'Post Title',
+              placeholder: "Enter post title",
+              optional: true, // if optional, slug is created from body
+            },
+            preview: {
+              length: 'short', // full, long, short, none/false/undefined
+              // mode: 'markdown', // remove-markdown, markdown; if empty, just render text
+            },
+            comment: {
+              required: true,
+              rows: 8,
+              type: 'textarea',
+              label: "Post Text",
+              placeholder: "Enter text for your post (markdown supported)",
+            },
+            replies: {
+              rows: 4,
+              type: 'textarea',
+              label: "Add a reply",
+              placeholder: "Add a thoughtful comment",
+              // postCta: "Add a Reply",
+            },
+          },
           Article: {
             icon: 'article',
             label: 'Article',
@@ -249,6 +294,7 @@ export const orgSpaces = {
             topic: {
               label: 'Link Title',
               placeholder: "Enter a title (article or a short, descriptive title)",
+              optional: true,
             },
             preview: {
               length: false, // full, short, none/false/undefined

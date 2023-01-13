@@ -1,0 +1,1 @@
+// placeholder script for Plausible analytics proxy rewrite rule
