@@ -6112,7 +6112,7 @@ pinkie@^2.0.0:
 
 "plasmid@git+https://github.com/janzheng/plasmid.git":
   version "0.0.5"
-  resolved "git+https://github.com/janzheng/plasmid.git#52e3f6dfc983a21293e252ceee038c57b065351b"
+  resolved "git+https://github.com/janzheng/plasmid.git#5d8b2e23010a007e46f07a020a691713bdce11d5"
   dependencies:
     "@polka/send" "^0.4.0"
     "@polka/send-type" "^0.5.2"
