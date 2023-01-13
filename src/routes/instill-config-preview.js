@@ -294,6 +294,7 @@ export const orgSpaces = {
             topic: {
               label: 'Link Title',
               placeholder: "Enter a title (article or a short, descriptive title)",
+              optional: true,
             },
             preview: {
               length: false, // full, short, none/false/undefined
