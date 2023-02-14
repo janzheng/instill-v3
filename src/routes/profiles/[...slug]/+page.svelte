@@ -17,25 +17,26 @@
   import * as config from '$instill/instill-config'
   import * as configPreview from '$instill/instill-config-preview'
   import { dev } from '$app/environment';
+  import { env } from '$env/dynamic/public';
   let baseConfig, orgSpaces
-  if(dev) {
-    baseConfig = configPreview.baseConfig
-    orgSpaces = configPreview.orgSpaces
+  if(dev||env.PUBLIC_PREVIEW==="true") {
+    baseConfig = configPreview.baseConfig;
+    orgSpaces = configPreview.orgSpaces;
   } else {
-    baseConfig = config.baseConfig
-    orgSpaces = config.orgSpaces
+    baseConfig = config.baseConfig;
+    orgSpaces = config.orgSpaces;
   }
 
   
   import ProfileView from '$instill-helpers/components/ProfileView.svelte';
 
-  export let data, loading = true
-  let {profile, topics, slug, subpaths} = data
-  let loud = false
+  export let data, loading = true;
+  let {profile, topics, slug, subpaths} = data;
+  let loud = false;
 
   $: if(data) {
-    loud = baseConfig?.settings?.loud || false 
-    loading = false
+    loud = baseConfig?.settings?.loud || false ;
+    loading = false;
   }
   
 </script>
