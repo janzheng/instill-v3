@@ -14,6 +14,7 @@
     "build": "vite build",
     "staging": "vite build --mode staging",
     "run": "vite build; vite preview",
+    "uplock": "yarn install --mode update-lockfile",
     "commit": "git add . -A ; git commit ; git push origin preview ",
     "commitprod": "git add . -A ; git commit ; git push origin main ",
     "prod": "link vercel directly to prod branch; don't push to prod",
