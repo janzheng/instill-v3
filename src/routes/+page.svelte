@@ -20,7 +20,7 @@
 <div class="my-12">
   <SpaceView {baseConfig} {_space} {spaceName} {subpaths} {comments} {profiles} />
 </div>
-
+ 
 
 {#key $ConfigHead}
   <Head />
