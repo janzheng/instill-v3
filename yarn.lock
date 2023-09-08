@@ -1748,10 +1748,10 @@
     entities "^2.0.3"
     node-fetch "^2.6.1"
 
-"@yawnxyz/sveltekit-notion@^0.0.522":
-  version "0.0.522"
-  resolved "https://registry.yarnpkg.com/@yawnxyz/sveltekit-notion/-/sveltekit-notion-0.0.522.tgz#a8d1d495f8058c632201899b95d596b7ddab725e"
-  integrity sha512-iy7L07VUgtcsijDHrDuZJrDUoNGfarRI4OQ/mDEoR42wQff2IuHoVYU0eqEvIN+TDO+/QIrSXu3YXfUJ+tgIKg==
+"@yawnxyz/sveltekit-notion@^0.0.527":
+  version "0.0.527"
+  resolved "https://registry.yarnpkg.com/@yawnxyz/sveltekit-notion/-/sveltekit-notion-0.0.527.tgz#732e3d302e057be9cd6049fb44f7b3f42eaea4f2"
+  integrity sha512-LmI6lftJ9U+l/M/U4XmbmbnbHI8hgAQ75DzlACVBgM+lxvxp4w/DDfvkeWvbqKjhfx5PDOTL6ENO4LfJ5b2fcw==
 
 abbrev@1:
   version "1.1.1"
