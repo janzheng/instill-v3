@@ -8,7 +8,9 @@
 <div class="hero | my-4">
   <div class="text-lg">
     <!-- legacy PhageCafe content -->
-    <Notion loadingMsg='' classes={''} blocks={data.notionData["f91a56ecf579421e85b6496bb4354a39"]} api={env.PUBLIC_NOTION_API}/>
+    {#if browser}
+      <Notion loadingMsg='' classes={''} blocks={data?.notionData?.["f91a56ecf579421e85b6496bb4354a39"]} api={env.PUBLIC_NOTION_API}/>
+    {/if}
     <div class="mt-2">
       <a href="/join" class="Btn-solid">Join the Community</a>
       <a href="/about" class="Btn-outline">Learn more</a>
@@ -44,6 +46,7 @@
   import Head from '$lib/components/shared/Head.svelte'
   import { Head as ConfigHead } from '$lib/config.js'
 
+  import { browser } from '$app/environment';
   import { env } from '$env/dynamic/public';
   import Notion from '@yawnxyz/sveltekit-notion'
 
